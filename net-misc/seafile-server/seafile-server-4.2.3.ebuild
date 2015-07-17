@@ -11,7 +11,8 @@ inherit python-single-r1
 
 DESCRIPTION="Cloud file syncing software - seahub webapp and server utilities"
 HOMEPAGE="http://www.seafile.com"
-SRC_URI="https://bitbucket.org/haiwen/seafile/downloads/seafile-server_${PV}_x86-64.tar.gz -> ${PN}-${PV}.tar.gz"
+#SRC_URI="https://bitbucket.org/haiwen/seafile/downloads/seafile-server_${PV}_x86-64.tar.gz -> ${PN}-${PV}.tar.gz"
+SRC_URI="https://bintray.com/artifact/download/seafile-org/seafile/seafile-server_${PV}_x86-64.tar.gz -> ${PN}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
