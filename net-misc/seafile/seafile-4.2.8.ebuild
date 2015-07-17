@@ -11,7 +11,7 @@ inherit autotools-utils python-single-r1
 
 DESCRIPTION="Cloud file syncing software"
 HOMEPAGE="http://www.seafile.com"
-SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}-server.tar.gz -> ${PN}-${PV}.tar.gz"
+SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -20,7 +20,7 @@ IUSE="+server +client +fuse"
 
 RDEPEND="
 	${PYTHON_DEPS}
-	>=net-libs/ccnet-${PV}
+	net-libs/ccnet
 	>=net-libs/libevhtp-1.1.6[shared,ssl]
 	virtual/pkgconfig
 	dev-libs/jansson
@@ -66,4 +66,4 @@ src_install() {
 	python_fix_shebang "${ED}"
 }
 
-S="${WORKDIR}/${PN}-${PV}-server"
+S="${WORKDIR}/${PN}-${PV}"

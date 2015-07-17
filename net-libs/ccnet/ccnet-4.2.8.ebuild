@@ -11,7 +11,7 @@ inherit autotools-utils python-single-r1
 
 DESCRIPTION="Networking library for Seafile"
 HOMEPAGE="http://www.seafile.com"
-SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}-server.tar.gz -> ${PN}-${PV}.tar.gz"
+SRC_URI="https://github.com/haiwen/${PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
 
 SLOT="0"
 LICENSE="GPL-2"
@@ -52,4 +52,4 @@ src_compile() {
     autotools-utils_src_compile
 }
 
-S="${WORKDIR}/${PN}-4.3.0-server"
+S="${WORKDIR}/${PN}-${PV}"
